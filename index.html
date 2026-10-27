@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tasty Bite Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>🍔 Tasty Bite</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Homepage -->
+    <section id="home" class="hero">
+        <h2>Welcome to Tasty Bite!</h2>
+
+        <p>Delicious Food, Amazing Taste.</p>
+
+        <a href="#menu" class="button">
+            Explore Our Menu
+        </a>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="food-container">
+
+            <div class="food-card">
+                <div class="food-image">🍔</div>
+                <h3>Beef Burger</h3>
+                <p>Juicy beef burger with fresh vegetables.</p>
+                <h4>K80</h4>
+                <button onclick="addToCart('Beef Burger', 80)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="food-card">
+                <div class="food-image">🍕</div>
+                <h3>Cheese Pizza</h3>
+                <p>Hot pizza topped with delicious cheese.</p>
+                <h4>K120</h4>
+                <button onclick="addToCart('Cheese Pizza', 120)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="food-card">
+                <div class="food-image">🍗</div>
+                <h3>Grilled Chicken</h3>
+                <p>Tender grilled chicken served with flavour.</p>
+                <h4>K100</h4>
+                <button onclick="addToCart('Grilled Chicken', 100)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="food-card">
+                <div class="food-image">🍟</div>
+                <h3>French Fries</h3>
+                <p>Crispy golden fries, perfect for sharing.</p>
+                <h4>K35</h4>
+                <button onclick="addToCart('French Fries', 35)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section id="cart">
+        <h2>🛒 Your Shopping Cart</h2>
+
+        <div id="cart-items">
+            Your cart is empty.
+        </div>
+
+        <h3>Total: K<span id="cart-total">0</span></h3>
+
+        <button onclick="checkout()">
+            Order Through WhatsApp
+        </button>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Tasty Bite</h2>
+
+        <p>
+            Welcome to Tasty Bite Restaurant!
+            We serve delicious meals prepared with care.
+            Our goal is to give every customer a wonderful
+            food experience.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p>📞 Phone: +260 770 000 000</p>
+        <p>📍 Location: Lusaka, Zambia</p>
+        <p>🕒 Opening Hours: 08:00 - 22:00</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Tasty Bite Restaurant.
+            All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
